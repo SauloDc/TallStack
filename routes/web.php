@@ -21,6 +21,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::view('/contacts', 'users.contacts');
+
 Route::view('/', 'welcome')->name('home');
 
 Route::middleware('guest')->group(function () {
